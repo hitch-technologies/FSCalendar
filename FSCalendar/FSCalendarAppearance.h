@@ -114,6 +114,11 @@ typedef NS_OPTIONS(NSUInteger, FSCalendarCaseOptions) {
 @property (assign, nonatomic) CGFloat  headerMinimumDissolvedAlpha;
 
 /**
+ * The alignment of the header title.
+ */
+@property (assign, nonatomic) NSTextAlignment headerTitleAlignment;
+
+/**
  * The day text color for unselected state.
  */
 @property (strong, nonatomic) UIColor  *titleDefaultColor;

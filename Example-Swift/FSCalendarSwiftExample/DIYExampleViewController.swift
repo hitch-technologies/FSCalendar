@@ -36,6 +36,9 @@ class DIYExampleViewController: UIViewController, FSCalendarDataSource, FSCalend
         view.addSubview(calendar)
         self.calendar = calendar
         
+        calendar.scrollDirection = .vertical
+        calendar.pagingEnabled = false
+//        calendar.appearance.headerTitleAlignment = .center
         calendar.calendarHeaderView.backgroundColor = UIColor.lightGray.withAlphaComponent(0.1)
         calendar.calendarWeekdayView.backgroundColor = UIColor.lightGray.withAlphaComponent(0.1)
         calendar.appearance.eventSelectionColor = UIColor.white

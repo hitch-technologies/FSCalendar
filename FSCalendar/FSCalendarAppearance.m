@@ -37,6 +37,7 @@
         
         _headerTitleColor = FSCalendarStandardTitleTextColor;
         _headerDateFormat = @"MMMM yyyy";
+//        _headerTitleAlignment = NSTextAlignmentCenter;
         _headerMinimumDissolvedAlpha = 0.2;
         _weekdayTextColor = FSCalendarStandardTitleTextColor;
         _caseOptions = FSCalendarCaseOptionsHeaderUsesDefaultCase|FSCalendarCaseOptionsWeekdayUsesDefaultCase;
@@ -417,6 +418,14 @@
         [self.calendar configureAppearance];
     }
 }
+
+//- (void)setHeaderTitleAlignment:(NSTextAlignment)headerTitleAlignment
+//{
+//    if (_headerTitleAlignment != headerTitleAlignment) {
+//        _headerTitleAlignment = headerTitleAlignment;
+//        [self.calendar configureAppearance];
+//    }
+//}
 
 - (void)setCaseOptions:(FSCalendarCaseOptions)caseOptions
 {
